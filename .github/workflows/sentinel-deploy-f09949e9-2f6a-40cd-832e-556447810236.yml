@@ -17,6 +17,9 @@ on:
     - '!.github/workflows/**'  # this filter prevents other workflow changes from triggering this workflow
     - '.github/workflows/sentinel-deploy-f09949e9-2f6a-40cd-832e-556447810236.yml'
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   deploy-content:
     runs-on: windows-latest
